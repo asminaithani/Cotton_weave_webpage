@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'work sans';
+}
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 90px;
+    padding-top: 170px;
+    gap: 70px;
+}
+#left{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    
+}
+
+#left h1{
+  font-size: 8.7vw;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 8.8vw;
+  padding-bottom: 30px;
+}
+#left-bottom{
+    width: 100%;
+    
+}
+#color{
+    width: fit-content;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+#color h5{
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+#color1{
+    height: 30px;
+    width: 30px;
+    background-color: burlywood;
+    border-radius: 50%;
+    margin: 3px;
+}
+#color2{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(248, 236, 191);
+    border-radius: 50%;
+}
+#left-bottom h2{
+    margin-top: 50px;
+    font-size: 2.3vw;
+    margin-bottom: 15px;
+}
+#left-bottom p{
+    font-size: 1.2vw;
+    width: 65%;
+    font-weight: 500;
+    color: #444;
+    line-height: 1.9vw;
+}
+#right{
+    height: 90%;
+    width: 34%;
+    position: relative;
+}
+#right-top{
+    height: 70px;
+    width: 100%;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#right-top h4{
+    font-size: 30px;
+    font-family: work sans;
+}
+#right-top h5{
+    font-size: 16px;
+}
+#right-top h5 i{
+    color: gold;
+}
+#right img{
+    width: 100%;
+    height: 91%;
+    object-fit: cover;
+}
+#black-circle{
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    border-radius: 50%;
+    right: -20%;
+    top: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#black-circle h5{
+    font-size: 25px;
+    font-weight: 500;
+}
+#rotated{
+    position: absolute;
+    bottom: 2%;
+    font-size: 35px;
+    rotate: -90deg;
+    transform-origin: 0 0;
+    font-weight: 500;
+    left: -10%;
+
+}
+@media (max-width:600px) {
+    #main{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 20px;
+        padding-top: 20px;
+        gap: 30px;
+    }
+    #left{
+        height: 51%;
+        width: 100%;
+        display: flex;
+        padding-bottom: 30px;
+    }
+    
+    #left h1{
+      font-size: 18vw;
+      line-height: 19vw;
+      padding-bottom: 15px;
+    }
+    #left-bottom{
+        width: 100%;
+        
+    }
+    #color{
+        width: fit-content;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #color h5{
+        font-size: 6vw;
+    }
+    #color1{
+        height: 25px;
+        width: 25px;
+        background-color: burlywood;
+        border-radius: 50%;
+        margin: 2px;
+    }
+    #color2{
+        height: 25px;
+        width: 25px;
+        background-color: rgb(248, 236, 191);
+        border-radius: 50%;
+    }
+    #left-bottom h2{
+        margin-top: 25px;
+        font-size: 4vw;
+        margin-bottom: 6px;
+    }
+    #left-bottom p{
+        font-size: 3.2vw;
+        width: 100%;
+        font-weight: 500;
+        color: #444;
+        line-height: 3.8vw;
+    }
+    #right{
+        height: 47%;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+       
+    }
+    #right img{
+        width: 100%;
+        height: 92%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    #right-top{
+        height: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #right-top h4{
+        font-size: 20px;
+        font-family: work sans;
+    }
+    #right-top h5{
+        font-size: 14px;
+    }
+    #right-top h5 i{
+        color: gold;
+    }
+   
+    #black-circle{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background-color: rgb(41, 41, 41);
+        color: white;
+        border-radius: 50%;
+        right: -6%;
+        top: -8%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #black-circle h5{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    #rotated{
+        position: absolute;
+        bottom: 101%;
+        font-size: 20px;
+        rotate: 0deg;
+        transform-origin: 0 0;
+        font-weight: 600;
+        left: 0%;
+    }    
+}
